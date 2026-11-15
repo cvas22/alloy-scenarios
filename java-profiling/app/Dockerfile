@@ -1,5 +1,5 @@
 # Pinned by digest; renovate's docker manager tracks the base image.
-FROM eclipse-temurin:25.0.3_9-jdk@sha256:32861ec22e54af9597a3875c69001f57c0954648f5e3fcb6be601b4e35290ab5
+FROM eclipse-temurin:25.0.5_8-jdk@sha256:b8705e936964c228dfce359e63dbf08f6c69cb380ed1d576b1f6b1064f15567d
 
 WORKDIR /app
 COPY Main.java .

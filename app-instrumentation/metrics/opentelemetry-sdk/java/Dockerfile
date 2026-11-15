@@ -8,7 +8,7 @@ COPY src ./src
 RUN mvn -B -q package
 
 # ---- run stage: slim JRE with just the fat jar ----
-FROM eclipse-temurin:25.0.3_9-jre@sha256:681c543d6f36c50f45e9b5226930a46203dcfa351d3670e9d0bdf0dabae53539
+FROM eclipse-temurin:25.0.5_8-jre@sha256:a640968ae55027b322cedd5f8228b01a84baff0b9e9360e47601c6a111ba1699
 WORKDIR /app
 COPY --from=build /app/target/app.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
